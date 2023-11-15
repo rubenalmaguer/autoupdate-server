@@ -1,0 +1,16 @@
+[build]
+publish = "public"
+
+[[headers]]
+for = "/*"
+[headers.values]
+Access-Control-Allow-Origin = "*"
+Access-Control-Allow-Methods = "*"
+Access-Control-Allow-Headers = "*"
+
+[[redirects]]
+from = "/"
+to = "https://github.com/rubenalmaguer/autoupdate-server"
+status = 302
+# status = 200
+force = true
